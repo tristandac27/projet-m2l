@@ -82,10 +82,10 @@ const Layout = () => {
                     Home
                   </Link>
                   <Link
-                    to="/blogs"
+                    to="/Reservation"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Blogs
+                  >reservation
+                    
                   </Link>
                   <Link
                     to="/contact"
@@ -112,11 +112,18 @@ const Layout = () => {
               Home
             </Link>
             <Link
-              to="/blogs"
+              to="/Chat"
               className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
-              Blogs
+             Chat
             </Link>
+            <Link
+              to="/Reservation"
+              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
+          Reservation
+            </Link>
+          
             <Link
               to="/contact"
               className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
