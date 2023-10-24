@@ -5,6 +5,7 @@ import Home from "./page/Home";
 import Contact from "./page/Contact";
 import Reservation from "./page/Reservation";
 import Chat from "./page/chat";
+import Register from "./page/Register";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Reservation" element={<Reservation />} />
         <Route path="/Chat" element={<Chat />} />
+        <Route path="/Register" element={<Register />} />
         
       </Route>
     </Routes>
