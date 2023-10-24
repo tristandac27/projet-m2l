@@ -38,7 +38,7 @@ function Home() {
         {images.map((image, index) => (
           <img
             key={image.id}
-            src={image.src}
+            src={`https://picsum.photos/id/${image.id}/800/400`}
             alt={image.title}
             className={`absolute top-0 left-0 w-full h-full transition-opacity duration-500 ${
               index === currentImageIndex ? 'opacity-100' : 'opacity-0'
@@ -50,20 +50,20 @@ function Home() {
           <p className="text-lg">{images[currentImageIndex].description}</p>
         </div>
         <button
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white px-4 py-2 rounded-l"
+          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white px-2 py-2 rounded-l"
           onClick={handlePrevClick}
         >
           &lt;
         </button>
         <button
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white px-4 py-2 rounded-r"
+          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white px-2 py-2 rounded-r"
           onClick={handleNextClick}
         >
           &gt;
         </button>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="max-w-4xl mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <img src="https://picsum.photos/id/1018/400/400" alt="Image 1" className="w-full h-48 object-cover" />
           <div className="p-4">
