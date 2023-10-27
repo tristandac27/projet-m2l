@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import database from '../../back-end/database';
+import database from '../../../back-end/database.js';
 
 function Register() {
   const [username, setUsername] = useState('');
