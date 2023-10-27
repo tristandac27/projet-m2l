@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
+<<<<<<< Updated upstream
 import database from '../../../back-end/database.js';
+=======
+import database from '../../../back-end/database';
+>>>>>>> Stashed changes
 
 function Register() {
   const [username, setUsername] = useState('');
