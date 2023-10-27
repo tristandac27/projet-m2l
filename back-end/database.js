@@ -27,22 +27,4 @@ const database = {
     return result.insertId;
   },
 };
-// ...
-
-// Exemple d'utilisation dans la fonction de connexion
-const user = await database.getUserByEmail(email);
-if (!user) {
-  // Utilisateur non trouvé
-  return false;
-}
-
-const passwordMatch = await database.checkPassword(password, user.password);
-if (!passwordMatch) {
-  // Le mot de passe ne correspond pas
-  return false;
-}
-
-// Connexion réussie
-return true;
-
 module.exports = database;
